@@ -78,8 +78,7 @@ top_10k_path = os.path.join("bootcamp-project-1","Resources","top_10k_streamed_s
 top_10k_df = pd.read_csv(top_10k_path)
 
 merged_df = pd.merge(audio_analysis_df, top_10k_df, how='left', left_on=['song', 'artist'], right_on=['Song Name', 'Artist Name'])
-
+merged_df_drop_duplicates = merged_df.drop_duplicates(subset=['song','artist'])
 # Display the merged DataFrame
-print(merged_df)
 
-merged_df.to_csv("merged_audio_chart.csv", index=False)
+merged_df_drop_duplicates.to_csv("merged_audio_chart.csv", index=False)
