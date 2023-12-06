@@ -12,7 +12,7 @@ towards a medium-high energy song in 'C#/Db' Major.
 
 # Main Branch
 #From Branch-Joss Investigation
-Do Song Lyric Count/Variety correlate to the popularity of a song?
+**Do Song Lyric Count/Variety correlate to the popularity of a song?**
 For the data, we counted the lyrics of all the songs, and counted the unique lyrics of all the songs. Additionally, those counts were compared to lyric count and unique lyric count for Popular Songs, meaning songs that peaked in the Top 10.
 For the lyric count for all songs, the Mean: 335.8233690873923, Median: 332.0, Mode: 0, Variance: 67599.5937877889, Standard Deviation: 259.99921882149744.
 (Plots found in Cell 11 of lyrics3.pynb)
@@ -23,13 +23,20 @@ For unique lyrics, for all songs, Mean: 135.8066643221382, Median: 123.0, Mode: 
 ((Plots found in Cell 17 of lyrics3.pynb)
 For unique lyrics, for popular songs, Mean: 148.58494957331266, Median: 139.0, Mode: 0, Variance: 13549.41533231497, Standard Deviation: 116.40195587839136.
 Again, popular music is using more unique words, than songs as a whole.
-Caveat to this finding, I kept in songs with 0 lyrics, some of these are 0 because of error, some are 0 because they have no lyrics, it is possible that fully cleaning the data that these findings may change. For this reason, the distribution tables are all bimodal.
+Caveat to this finding, I kept in songs with 0 lyrics, some of these are 0 because of error, some are 0 because they have no lyrics, it is possible that a fully cleaned datasetwould modidy these findings. For this reason, the distribution tables are all bimodal.
 This distribution charts of the formerly discussed data can be found here:
 (Plots found in Cell 12 of lyrics3.pynb)
 (Plots found in Cell 15 of lyrics3.pynb)
 (Plots found in Cell 18 of lyrics3.pynb)
 (Plots found in Cell 21 of lyrics3.pynb)
-Do the most popular artists have more Top 10 hits than other artists?
+For lyric count, for all songs, they were slightly positively correlated (0.0207) to days on the chart. The unique word count, for all songs, had a slightly negative correlation (-0.003) to days on the chart. This indicates that the amount of words is more important to song popularity than variety.
+(Plots found in Cell 22 of lyrics3.pynb)
+(Plots found in Cell 23 of lyrics3.pynb)
+Both total words, and unique words, for all songs have a slight positive correlation in regard to total streams of songs, at 0.022 and 0.003.
+**Do the most popular artists have more Top 10 hits than other artists?**
+Unlike the flash in the pan One-Hit-Wonder artists, the biggest artists in the world have multiple Top 10 hits. The Total Streams of an Arist is correlated positively (0.568) to the average position of their songs. Additionally, the higher amount of Top 10 songs an artist has, strongly positively correlates (0.922) to the amount of Total Streams of an Artist.
+(Plots found in Cell 29 of lyrics3.pynb) This chart shows a negative trend, but that is because a lower number indicates a higher chart position, so the negative correlation is actually a positive correlation.
+(Plots found in Cell 33 of lyrics3.pynb)
 
 # Branch Aaron
 - Used api to retrieve lyrics for the top 11000 streamed songs. These were used to analyze lyric data.
