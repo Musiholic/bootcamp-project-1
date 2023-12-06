@@ -9,9 +9,7 @@ While the key signature of a song is not imperative; there is an obvious love fo
 strong like for medium to medium-high energy songs. Thus we can conclude that the most popular songs are tending
 towards a medium-high energy song in 'C#/Db' Major.
 
-
-# Main Branch
-#From Branch-Joss Investigation
+**#From Branch-Joss Investigation**
 **Do Song Lyric Count/Variety correlate to the popularity of a song?**
 For the data, we counted the lyrics of all the songs, and counted the unique lyrics of all the songs. Additionally, those counts were compared to lyric count and unique lyric count for Popular Songs, meaning songs that peaked in the Top 10.
 For the lyric count for all songs, the Mean: 335.8233690873923, Median: 332.0, Mode: 0, Variance: 67599.5937877889, Standard Deviation: 259.99921882149744.
