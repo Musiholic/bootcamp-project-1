@@ -37,6 +37,7 @@ Both total words, and unique words, for all songs have a slight positive correla
 Unlike the flash in the pan One-Hit-Wonder artists, the biggest artists in the world have multiple Top 10 hits. The Total Streams of an Arist is correlated positively (0.568) to the average position of their songs. Additionally, the higher amount of Top 10 songs an artist has, strongly positively correlates (0.922) to the amount of Total Streams of an Artist.
 (Plots found in Cell 29 of lyrics3.pynb) This chart shows a negative trend, but that is because a lower number indicates a higher chart position, so the negative correlation is actually a positive correlation.
 (Plots found in Cell 33 of lyrics3.pynb)
+Additionally, in both cases, there is a p-value of 0.0, which shows that the more hit songs an artist has, the more total streams the artist will have.
 
 # Branch Aaron
 - Used api to retrieve lyrics for the top 11000 streamed songs. These were used to analyze lyric data.
