@@ -50,3 +50,31 @@ Additionally, in both cases, there is a p-value of 0.0, which shows that the mor
  - The plots also show how songs popularity are when they first get on the list and how trends fall with days going by.
  - A summary statistics was done on the artist peak streams after merging main data with the lyrics to see the mean, median, variance, standard deviation
  - Bar chart to show the Artist and their peak strems on the music chart
+
+# Branch-Joe
+I was looking to see what trends existed across multiple audio feature dimensions and their correlations to different aspects of popularity. 
+
+H_0 = there is no correlation between a tracks auditory features and it's success
+H = there is a correlation between a tracks auditory features and it's success
+
+I used the data from the top_10k_streamed_songs.csv to create a search function through the spotify api in the spotify_data_retrieval.py file. 
+spotify_data_retrieval.py puts out spotify_audio_csv.csv which contains the audio features. 
+limited_data_analysis.py takes data from spotify_audio_csv.csv and top_10k_streamed_songs.csv and merges them into merged_audio_chart.csv, it also completes and prints some rudimentary statistics to the terminal for the datasets.
+scatterplots_gp_1.ipynb creates all of the different scatterplots that I used on my slides
+
+There were very obvious trends in the data displayed in the first scatterplot in scatterplots_gp_1.ipynb:
+- There were only 2 songs in the list of 1492 popular songs that had a BPM of less than 60.
+- The average BPM of 120 fits the dataset almost perfectly as the majority of songs cluster around 120 BPM and an energy level of 0.6-0.8 and the majority of the large dots occupying this region of the plot.
+- There was no obvious correlation between a song being major or minor and it being successful, or in it's BPM, or energy level.
+
+The second scatterplot in scatterplots_gp_1.ipynb had fewer obvious trends but ended up showing some interesting features of different aspects of popularity
+- The largest circles, with size in this case representing total streams for a song, all tended to appear in the higher peak positions.
+- With the first point being made, the second point is that there were a significant number of songs with relatively low stream counts who made it into the highest peak positions.
+- The trends shown for key preference by Corbin's code aren't visibly obvious in the scatterplot due to format.
+- There was no obvious trends in a songs popularity in relation to the emotional response except that the majority of the most streamed songs occured at an emotional response of approximately 0.8
+
+With some of the visible lines in the data, it is clear that there are auditory factors that factor into the popularity of a song.
+According to our data, the audio features that would give the highest probability of success would be:
+- A BPM of 120
+- An energy level of .75
+- An emotional response falling in between .5-.75 
