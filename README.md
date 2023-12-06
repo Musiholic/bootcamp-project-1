@@ -30,3 +30,11 @@ This distribution charts of the formerly discussed data can be found here:
 (Plots found in Cell 18 of lyrics3.pynb)
 (Plots found in Cell 21 of lyrics3.pynb)
 Do the most popular artists have more Top 10 hits than other artists?
+
+Branch Aaron
+- Used api to retrieve lyrics for the top 11000 streamed songs. These were used to analyze lyric data.
+- Do the individual words in a song effect its popularity?
+	- By only looking at notable words (not common words). 
+	- Looking at the top 5 notable words in each song, I analyzed the statistics of the individual words.
+	- "Love" is the most popular notable word. (top_lyrics.png)
+	- Songs that contain "Holiday" have the highest average streams. (top_streaming_words.png)
