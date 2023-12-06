@@ -45,3 +45,9 @@ Unlike the flash in the pan One-Hit-Wonder artists, the biggest artists in the w
 	- Looking at the top 5 notable words in each song, I analyzed the statistics of the individual words.
 	- "Love" is the most popular notable word. (top_lyrics.png)
 	- Songs that contain "Holiday" have the highest average streams. (top_streaming_words.png)
+ - # Felix Ologo-Gyan
+ - Do songs grow quickly with trends in terms of popularity
+ - The dataset was used to look at the relationships of the various variables in the columns and compared in pairs. To see how trends and staying on the chart affect the songs popularity scatter plots for correlation and regression to ascertain the findings were plotted. A correlation value of 0.57 means it is a ‘’positive moderate correlation’’ for Days against top ten chart songs and a none or very weak regression value of 0.0947. 
+ - The plots also show how songs popularity are when they first get on the list and how trends fall with days going by.
+ - A summary statistics was done on the artist peak streams after merging main data with the lyrics to see the mean, median, variance, standard deviation
+ - Bar chart to show the Artist and their peak strems on the music chart
